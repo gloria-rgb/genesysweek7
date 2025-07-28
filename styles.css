@@ -401,7 +401,7 @@ header img{
   font-weight: bold;
   cursor: pointer;
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 700px) {
 
     #menu_list{
         display: block;
@@ -412,7 +412,7 @@ header img{
     width: 100%;
 }
  .food_img img{
-    width: 90%;
+    width: 95%;
         height: 100px;
     }
 
