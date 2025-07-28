@@ -586,11 +586,11 @@ margin-bottom: 20px;
     }
 }
 @media print {
-  body  {
+  body *{
     display: none;
   }
 
-  .cart_list {
+  .cart_list * {
     display: block;
   }
 }
