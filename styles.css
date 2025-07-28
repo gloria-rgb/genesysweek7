@@ -1,0 +1,580 @@
+
+
+/* css variables  */
+:root{
+   --heading:  rgb(245, 240, 198);
+   --background: rgb(13, 12, 12);
+   --buttons:  rgb(235, 43, 75);
+
+}
+
+
+/* universal styling  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+}
+
+body{
+    background-color: var(--background);
+    color: var(--heading);
+}
+body a{
+    color: var(--heading);
+     text-decoration: none;
+     font-size: 20px;
+}
+
+body a:hover{
+    color: rgb(225, 174, 106);
+    font-weight: bold;
+}
+
+body ul li{
+    list-style: none;
+}
+/* nav  */
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    height: auto;
+}
+
+header h3{
+    color: var(--heading);
+    font-size: 30px;
+    padding: 10px;
+}
+
+header .nav_list {
+   padding: 15px;
+}
+.nav_list ul{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+header img{
+    width: 20px;
+    border-radius: 5px;
+}
+
+.menu_btn{
+  background-color: var(--buttons);
+  border-radius: 5px;
+  height: 50px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.menu_btn:hover{
+    background-color: var(--heading);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.hamburger img{
+    width: 50px;
+}
+/* navbarresponsive  */
+@media screen and (max-width:890px) {
+    .nav_list{
+        display: none;
+        width: 100%;
+        background-color: var(--background);
+        overflow: hidden;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 10;
+
+    }
+    
+    .menu_btn{
+        width: 40%;
+        height: 70px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+    }
+    .nav_list ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav_list ul li a{
+        text-align: center;
+        line-height: 30px;
+        display: block;
+
+    }
+    #nav_list{
+        height: 55%;
+
+    }
+    .show_list{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+/* end nav  */
+.main{
+    height: auto;
+}
+.hero{
+    height: inherit;
+}
+.hero img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero_child span{
+    color: var(--background);
+}
+.hero_child{
+    width: 40%;
+    background-color: rgb(45, 61, 61);
+    height: auto;
+    position: relative;
+    bottom: 200px;
+    left: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.hero_child h3{
+    font-size: 50px;
+    font-style: italic;
+}
+
+.hero_child p{
+    text-align: left;
+    line-height:2;
+    margin: 5px;
+}
+.hero_child a{
+    margin-left: 50px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.hero_child a img{
+    width: 30px;
+    border-radius: 5px;
+    
+}
+@media screen and (max-width:890px) {
+    .main{
+        display: block;
+    }
+    
+    .hero{
+        overflow: hidden;
+    }
+
+    .hero_child{
+    width: 80%;
+    left: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+    
+
+
+.hero_child a{
+    margin-left: 20px;
+}
+}
+
+/* end hero  */
+
+.about{
+      background-image: url(images/fried\ rice.jpg);
+        background-size:80%;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+
+.about_text{
+    width: 80%;
+    position: relative;
+    bottom: 100px;
+    left: 40px;
+    background-color: #fff;
+     padding: 20px;
+     align-items: center;
+      border-radius: 2% 25% 25% 0%;
+      color: #13302f;
+}
+
+.about_text h5{
+    color: var(--buttons);
+    font-size: 18px;
+}
+
+.about_text h3{
+    margin: 10px;
+    font-size: 50px;
+}
+
+.about_child{
+    display: flex;
+    margin: 15px;
+    gap: 10px;
+    
+}
+
+.about_child h6{
+    color: var(--buttons);
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about_list{
+   margin-top: 30px;
+   margin-left: 20px;
+}
+
+.about_list ul li{
+    list-style-image:linear-gradient(to left bottom, red, white);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+@media screen and (max-width: 890px) {
+    .about{
+        width: 100%;
+        display: block;
+    }
+
+.about_text{
+    width: 90%;
+    position: relative;
+    bottom: 80px;
+    left: 20px;
+}
+
+.about_list
+{
+    margin-bottom: 20px;
+}
+}
+
+/* end about  */
+.menu_section{
+    background-color: rgb(174, 178, 163);
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    height: auto;
+}
+
+.intro{
+    height: auto;
+}
+
+.intro h1{
+    color: var(--buttons);
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.intro p{
+    font-size: 30px;
+    padding: 10px;
+    color: #fff;
+}
+#menu_list{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    background-color: rgb(174, 178, 163);
+    padding: 20px;
+    gap: 30px;
+}
+
+.food_list{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 15px;
+
+}
+.cart_list{
+    width: 40%;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgb(21, 30, 21);
+    padding: 40px;
+    margin: 0 auto;
+    display: none;
+}
+
+.food{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 10px var(--heading);
+    background-color: #fff;
+}
+.food_img{
+    width: 100%;
+} 
+
+.food_img img{
+    width: 100%;
+      height: 250px;
+    object-fit: fill;
+      border-radius: 20%;
+      overflow: hidden;
+      transition: 0.5s ;
+}
+
+.food_img img:hover{
+    transform: scale(0.9);
+}
+.food_details h2{
+    color: rgb(6, 35, 36);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.food_details p{
+    text-align: center;
+    color: var(--background);
+    padding: 10px;
+    font-size: 18px;
+}
+.food_details button{
+    background-color: var(--buttons);
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.add_to_cart:hover{
+    background-color: #cecdcd;
+}
+
+.food_price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #092a28;
+    padding: 10px;
+}
+.food_price .price{
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.food_price .add_to_cart{
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: var(--buttons);
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media screen and (max-width: 890px) {
+
+    #menu_list{
+        display: block;
+        width: 100%;
+        padding: 0px;
+    }
+.food_list{
+    width: 100%;
+}
+ .food_img img{
+    width: 90%;
+        height: 100px;
+    }
+
+.cart_list{
+    width: 100%;
+}
+
+.food_price{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #092a28;
+    padding: 10px;
+}
+}
+
+
+
+/* cart  */
+.cart_list h1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(11, 20, 11);
+    margin-bottom: 20px;
+}
+
+.cart_remove, #cart_close{
+    width: 25px;
+    margin-right: 60px;
+}
+
+.cart_content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #092a28;
+margin-bottom: 20px;
+}
+
+.cart_img{
+    width: 20%;
+     height: 100px;
+     object-fit: cover;
+}
+
+.cart_img img{
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cart_detail{
+    display: grid;
+    grid-template-rows: 25% 25% 25%;
+    gap: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.cart_name{
+    font-size: 18px;
+}
+
+.cartprice{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+/* cart qyantity  */
+
+.cart_quantity{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    border-radius: 6px;
+    gap: 10px;
+    padding: 3px;
+    border: 1px solid var(--background);
+
+}
+
+.cart_quantity button{
+    background: transparent;
+    width: 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart_quantity .increment{
+    color: green;
+}
+
+.cart_quantity .decrement{
+    color: red;
+}
+
+.cart_quantity .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-left: 1px solid rgb(19, 39, 19);
+    border-right: 1px solid rgb(19, 39, 19);
+    padding: 10px;
+}
+
+.cart_remove{
+    width: 40px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid var(--background);
+    margin-top: 50px;
+    font-size: 22px;
+    color: var(--background);
+
+}
+
+.total_price{
+    margin-left: 10px;
+    font-weight: 600;
+    color: var(--background);
+}
+
+.Order{
+    display: block;
+    padding: 10px 30px;
+    background: var(--buttons);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
+.Order:hover{
+    background: #fff;
+    color: var(--buttons);
+}
+
+/* below 400px, cart img is set to none  */
+@media screen and (max-width: 400px) {
+    .cart_img{
+        display: none;
+    }
+}
+
+@media screen and (max-width:890px) {
+
+    .cart_content{
+        gap: 30px;
+    }
+    .cart_img{
+        width: 50%;
+    }
+}
